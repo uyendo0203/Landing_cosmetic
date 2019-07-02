@@ -194,14 +194,19 @@ $color-yellow : #fff3ae;
                 color:#256D40;
                 text-align: center;
                 margin: 0;
+                @media (max-width: 1400px) {
+                    font-size:20px;
+                }
                 @media (max-width: 767px) {
                     font-size: 18px;
                 }
                 &-1{}
                 &-2{
+                    
                     img{
                         max-width: 15px;
-                        display: inline;
+                        display: inline;    
+                        margin-top: -5px;
                     }
                 }
             }
@@ -286,6 +291,9 @@ $color-yellow : #fff3ae;
                 font-size: 30px;
                 margin: 0;
                 padding-bottom: 30px;
+                @media (max-width:1400px) {
+                    font-size: 25px;
+                }
             }
             .list{
                 
@@ -318,8 +326,10 @@ $color-yellow : #fff3ae;
                         padding-right: 50px;
                         font-size: 18px;
                         font-family: 'iCielGotham-Medium';
-                        @media (max-width: 767px) {
+                        @media (max-width:1400px) {
                             font-size: 14px;
+                        }
+                        @media (max-width: 767px) {
                             max-width: 100%;
                         }
                     }
@@ -340,6 +350,9 @@ $color-yellow : #fff3ae;
                 text-align: center;
                 padding-left: 90px;
                 padding-right: 90px;
+                @media (max-width:1400px) {
+                    font-size: 25px;
+                }
                 @media (max-width:600px) {
                     padding-left: 30px;
                     padding-right: 30px;
@@ -418,23 +431,31 @@ $color-yellow : #fff3ae;
                 right: 0;
                 max-width: 270px;
                 z-index: -1;
-                @media (max-width:480px) {
+                @media (max-width:767px) {
                     max-width: 170px;
                 }
             }
             table{
                 width: 100%;
                 td{
-                    @media (max-width: 767px) {
-                        display: block
-                    }
+                    // @media (max-width: 767px) {
+                    //     display: block
+                    // }
                     &:first-child{
                         width: 225px;
                         text-align: right;
+                        @media (max-width: 1400px) {
+                            width: 160px;
+                        }
                         @media (max-width: 767px) {
                             width: 100px;
                             margin: 0 auto;
                             padding-bottom: 20px;
+                            padding-left: 10px;
+                        }
+                        @media (max-width: 480px) {
+                            width: 90px;
+                            
                         }
                     }
                     &:last-child{
